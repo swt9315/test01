@@ -1,6 +1,16 @@
 %h1 トップページ
+- @items.each do |item|
+  .imageBox{style: "background-image: url(#{item.image});"}
+  .content_post{style: "background-image: url(#{item.image});"}
+
+  = image_tag src = "/images/item.image", class: "productImage"
+  %p 商品名
+  %p.productName= item.name
+  %p 価格
+  %p.productPrice= item.price
 
 
-
-
--# = link_to "商品詳細ページへ", item_path, method: :get, class: "showPage"
+  
+-# = link_to "出品する", new_item_path, class: "linkToExhibition"
+-# = form_with url: new_item_path, method: :get, local: true do |f|
+  = f.submit "出品する", autofocus: true

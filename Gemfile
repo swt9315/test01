@@ -27,10 +27,11 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'active_hash', '~> 2.3.0'
 gem 'carrierwave', '~> 0.11.2'
-# gem 'devise'
+gem 'devise'
 gem 'fog-aws'
 gem 'font-awesome-sass', '~> 5.4.1'
 gem 'haml-rails', '~> 2.0'
+gem 'mini_magick'
 
 
 # Reduces boot times through caching; required in config/boot.rb
