@@ -1,0 +1,7 @@
+%h1 商品出品ページ
+= form_with model: @item, local: true do |form|
+  = form.text_field :image,  placeholder: "画像"
+  = form.text_field :name, maxlength: 40, placeholder: "商品名"
+  = form.text_area :explanation, placeholder: "商品の説明文"
+  = form.number_field :price, min: 0.0, step: 1.0, placeholder: "商品価格"
+  = form.submit "出品"
